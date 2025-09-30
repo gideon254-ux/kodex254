@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kodex (KDX) - Made in Africa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@solana/wallet-adapter-wallets"></script>
+  <script src="https://unpkg.com/@solana/wallet-adapter-base"></script>
+  <script src="https://unpkg.com/@solana/wallet-adapter-wallets"></script>
+  <script src="https://unpkg.com/@solana/wallet-adapter-phantom"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #f0f0f0;
+      font-family: 'Inter', sans-serif;
+    }
+    .glow-text {
+      text-shadow: 0 0 8px #7c3aed, 0 0 12px #4f46e5;
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(124,58,237,0.7);
+    }
+  </style>
+</head>
+<body class="overflow-x-hidden">
+  <!-- Hero Section -->
+  <section class="text-center py-16 relative">
+    <img src="https://jade-accused-barracuda-794.mypinata.cloud/ipfs/bafybeicf5evv677ljostbd2hhxekgg5hu6apvlpppvxztd6345fop6fabi" alt="Kodex Logo" class="mx-auto w-32 animate-pulse">
+    <h1 class="text-5xl font-bold glow-text mt-4">Kodex (KDX)</h1>
+    <p class="mt-2 text-lg">The first African-born Solana token 🇰🇪</p>
+
+    <div id="countdown" class="text-2xl font-mono mt-6"></div>
+
+    <button id="connectWallet" class="mt-6 px-6 py-3 bg-purple-700 rounded-2xl shadow-lg hover:bg-purple-800 transition">Connect Wallet</button>
+
+    <div class="mt-6 flex justify-center space-x-6">
+      <div class="card bg-gray-900 p-4 rounded-xl">
+        <p class="font-bold">Supply</p>
+        <p>1,000,000,000 KDX</p>
+      </div>
+      <div class="card bg-gray-900 p-4 rounded-xl">
+        <p class="font-bold">Launch</p>
+        <p>Oct 28, 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="px-6 md:px-20 py-12">
+    <h2 class="text-3xl font-bold glow-text mb-6">About Kodex</h2>
+    <p>
+      Kodex (KDX) is a payment-focused cryptocurrency built on Solana, designed to bridge Africa with blockchain technology.
+      Our mission is to create accessible, fast, and low-cost crypto transactions, starting from Kenya and reaching the world.
+    </p>
+  </section>
+
+  <!-- Tokenomics -->
+  <section class="px-6 md:px-20 py-12 bg-gray-950">
+    <h2 class="text-3xl font-bold glow-text mb-6">Tokenomics</h2>
+    <table class="table-auto w-full border border-purple-700 rounded-xl overflow-hidden">
+      <thead class="bg-purple-800">
+        <tr>
+          <th class="p-3 text-left">Allocation</th>
+          <th class="p-3 text-left">Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-gray-900"><td class="p-3">Public Sale</td><td class="p-3">40%</td></tr>
+        <tr class="bg-gray-800"><td class="p-3">Liquidity</td><td class="p-3">20%</td></tr>
+        <tr class="bg-gray-900"><td class="p-3">Team</td><td class="p-3">15%</td></tr>
+        <tr class="bg-gray-800"><td class="p-3">Community Rewards</td><td class="p-3">15%</td></tr>
+        <tr class="bg-gray-900"><td class="p-3">Treasury</td><td class="p-3">10%</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Roadmap -->
+  <section class="px-6 md:px-20 py-12">
+    <h2 class="text-3xl font-bold glow-text mb-6">Roadmap</h2>
+    <ul class="space-y-4">
+      <li>✅ Q4 2025 → Token launch, DEX listing, airdrop</li>
+      <li>🔄 Q1 2026 → Governance & smart contract audit</li>
+      <li>🚀 Q2 2026 → Staking, partnerships, ecosystem tools</li>
+    </ul>
+  </section>
+
+  <!-- How to Buy -->
+  <section class="px-6 md:px-20 py-12 bg-gray-950">
+    <h2 class="text-3xl font-bold glow-text mb-6">How to Buy</h2>
+    <ol class="list-decimal ml-6 space-y-2">
+      <li>Install <a href="https://phantom.app/" target="_blank" class="text-purple-400 underline">Phantom Wallet</a></li>
+      <li>Fund your wallet with SOL</li>
+      <li>Swap SOL → KDX on a Solana DEX (soon)</li>
+    </ol>
+    <div class="mt-6 space-x-4">
+      <a href="https://phantom.app/" target="_blank" class="px-4 py-2 bg-purple-700 rounded-lg hover:bg-purple-800">Get Phantom</a>
+      <a href="#" class="px-4 py-2 bg-gray-600 rounded-lg">View on DEX (Coming Soon)</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="px-6 md:px-20 py-12">
+    <h2 class="text-3xl font-bold glow-text mb-6">FAQ</h2>
+    <div class="space-y-4">
+      <div class="card bg-gray-900 p-4 rounded-xl">
+        <p class="font-bold">What is Kodex?</p>
+        <p>Kodex is a Solana-based payment token built in Africa to enable seamless digital transactions.</p>
+      </div>
+      <div class="card bg-gray-900 p-4 rounded-xl">
+        <p class="font-bold">How do I buy KDX?</p>
+        <p>Install Phantom, fund with SOL, and swap on a Solana DEX after launch.</p>
+      </div>
+      <div class="card bg-gray-900 p-4 rounded-xl">
+        <p class="font-bold">Is Kodex audited?</p>
+        <p>An independent audit is scheduled in Q1 2026.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="px-6 md:px-20 py-12 bg-gray-950">
+    <h2 class="text-3xl font-bold glow-text mb-6">Join the Community</h2>
+    <p>Connect with us and be part of the Kodex journey.</p>
+    <div class="mt-6 space-x-4">
+      <a href="https://t.me/cradle_kodex_corp" target="_blank" class="px-4 py-2 bg-purple-700 rounded-lg hover:bg-purple-800">Telegram</a>
+      <a href="mailto:innercircle330bs@gmail.com" class="px-4 py-2 bg-purple-700 rounded-lg hover:bg-purple-800">Email Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-black">
+    <p>© 2025 Kodex — Built on Solana | Made in Kenya 🇰🇪</p>
+    <p class="text-sm text-gray-500">Disclaimer: This is not financial advice.</p>
+  </footer>
+
+  <script>
+    // Countdown Timer
+    const countdown = document.getElementById('countdown');
+    const launchDate = new Date('October 28, 2025 00:00:00').getTime();
+    setInterval(() => {
+      let now = new Date().getTime();
+      let distance = launchDate - now;
+      if (distance < 0) {
+        countdown.innerHTML = "🚀 Launched!";
+        return;
+      }
+      let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
+  </script>
+</body>
+</html>
